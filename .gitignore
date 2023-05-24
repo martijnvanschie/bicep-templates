@@ -1,0 +1,6 @@
+# Local files
+
+*.local.*
+
+# Draw.io File
+*.bkp
