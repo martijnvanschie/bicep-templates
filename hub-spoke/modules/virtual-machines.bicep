@@ -17,7 +17,7 @@ param adminUsername string
 @description('The password for the admin account')
 param adminPassword string
 
-resource networkInterface 'Microsoft.Network/networkInterfaces@2020-11-01' = {
+resource networkInterface 'Microsoft.Network/networkInterfaces@2022-11-01' = {
   name: 'nic-vm-${vmName}'
   location: location
   properties: {
@@ -35,7 +35,7 @@ resource networkInterface 'Microsoft.Network/networkInterfaces@2020-11-01' = {
   }
 }
 
-resource windowsVM 'Microsoft.Compute/virtualMachines@2020-12-01' = {
+resource windowsVM 'Microsoft.Compute/virtualMachines@2023-03-01' = {
   name: 'vm-${vmName}'
   location: location
   properties: {
